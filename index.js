@@ -50,6 +50,14 @@ $(function() {
 
     $("#main").children().delay(300).each(function(){
         $(this).delay(200 * ($(this).index() + 1)).animate({opacity:1},500);
+    });
+
+    $(window).on('scroll', function(){
+        var target = $("#pic3").offset();
+        if ($(this).scrollTop() > (target["top"] - 200)){
+            $("#pic3").children().animate({opacity:1}, 2000).clearQueue(true);
+        }
+
     })
 
 
