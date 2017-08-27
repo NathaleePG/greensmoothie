@@ -230,6 +230,10 @@ li span{
     overflow:hidden;
 }
 
+#main p, #main div{
+    opacity:0;
+}
+
 #head{
     font-size:2.25em;
     margin-bottom:50px;
@@ -401,6 +405,35 @@ li span{
     }
     #toggle{
         opacity:0.9;
+    }
+}
+
+@media screen and (max-width:660px){
+    #pic1{
+        background-size:660px 390px;
+        height:375px;
+    }
+
+    #box{
+        position:relative;
+        left:0;
+        top:0;
+        margin-top:-50px;
+    }
+
+    #pic2{
+        background-size:660px 376px;
+        height:365px;
+        width:100%;
+    }
+
+    #pic3{
+        margin-left:0;
+    }
+
+    #pic3 p{
+        font-size:1.75em;
+        background-color: rgba(255, 255, 255, 0.5);
     }
 }
 
