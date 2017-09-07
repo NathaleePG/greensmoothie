@@ -300,7 +300,7 @@ li span{
 #recipe{
     margin-bottom:75px;
 }
-#recipe > span{
+#recipe > span:not(#serving){
     font-weight:bold;
 }
 
@@ -310,6 +310,10 @@ li span{
 
 #heart{
     margin-top:10px;
+}
+
+#serving{
+    font-style:italic;
 }
 #root{
     position:relative;
